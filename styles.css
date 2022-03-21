@@ -4,10 +4,9 @@
 
 body {
     background: url(./images/pattern-background-desktop.svg) 0 0 no-repeat hsl(225, 100%, 94%);
-    background-size: cover;
-    background-position: 0px -250px;
+    background-size: 100%;
     font-family: 'Red Hat Display', sans-serif;
-   user-select: none;
+    user-select: none;
 }
 
 
@@ -48,48 +47,38 @@ p {
 /* Order Item Div */
 
 .order-item {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
     background: hsl(225, 100%, 98%);
     border-radius: 10px;
-    padding: 50px;
+    padding: 12px;
     margin: auto;
-
+    align-items: center;
+    margin-top: 35px;
 }
 
 .order-item img {
-    
     width: 50px;
     height: 50px;
-    position:absolute;
-    left: 25px;
-    top: 25px;
-
 }
 
 h2 {
     font-size: 16px;
     font-weight: 900;
     color: hsl(223, 47%, 23%);
-    position: absolute;
-    top: 15px;
-    left: 100px;
+    margin: 5px;
 }
 
-.order-item p {
-    position: absolute;
-    top: 40px;
-    left: 100px;
+.plan-details p {
+    margin: 5px;
 }
+
 
 .order-item a {
     font-size: 14px;
     font-weight: 700;
     text-decoration:none; 
     cursor:pointer;  
-    position: absolute;
-    right: 25px;
-    top: 40px;
-
 }
 
 .order-item a:active{
@@ -105,7 +94,7 @@ h2 {
 .payment {
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 700;
-    width: 330px;
+    width: 100%;
     background: hsl(245, 75%, 52%);
     font-size: 14px;
     color: white;
@@ -122,7 +111,7 @@ h2 {
 .cancel {
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 700;
-    width: 330px;
+    width: 100%;
     background: white;
     font-size: 14px;
     color: hsl(224, 23%, 55%);
@@ -156,6 +145,5 @@ h2 {
 @media screen and (max-width: 600px) {
     body {
         background-image: url(./images/pattern-background-mobile.svg);
-        background-position: 0px -500px;
     }
 }
